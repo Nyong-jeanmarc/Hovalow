@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A092D581C96007D7D2B /* AppDelegate.swift */; };
+		D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */; };
+		D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A0D2D581C96007D7D2B /* ViewController.swift */; };
+		D5E96A112D581C96007D7D2B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A102D581C96007D7D2B /* Base */; };
+		D5E96A142D581C96007D7D2B /* Hovalow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A122D581C96007D7D2B /* Hovalow.xcdatamodeld */; };
+		D5E96A162D581C9A007D7D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A152D581C9A007D7D2B /* Assets.xcassets */; };
+		D5E96A192D581C9A007D7D2B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A182D581C9A007D7D2B /* Base */; };
+		D5E96A242D581C9B007D7D2B /* HovalowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A232D581C9B007D7D2B /* HovalowTests.swift */; };
+		D5E96A2E2D581C9B007D7D2B /* HovalowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A2D2D581C9B007D7D2B /* HovalowUITests.swift */; };
+		D5E96A302D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5E96A202D581C9B007D7D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5E969FE2D581C95007D7D2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5E96A052D581C96007D7D2B;
+			remoteInfo = Hovalow;
+		};
+		D5E96A2A2D581C9B007D7D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5E969FE2D581C95007D7D2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5E96A052D581C96007D7D2B;
+			remoteInfo = Hovalow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5E96A062D581C96007D7D2B /* Hovalow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hovalow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E96A092D581C96007D7D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5E96A0D2D581C96007D7D2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5E96A102D581C96007D7D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5E96A132D581C96007D7D2B /* Hovalow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hovalow.xcdatamodel; sourceTree = "<group>"; };
+		D5E96A152D581C9A007D7D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5E96A182D581C9A007D7D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5E96A1A2D581C9A007D7D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E96A1F2D581C9B007D7D2B /* HovalowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HovalowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E96A232D581C9B007D7D2B /* HovalowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowTests.swift; sourceTree = "<group>"; };
+		D5E96A292D581C9B007D7D2B /* HovalowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HovalowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E96A2D2D581C9B007D7D2B /* HovalowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowUITests.swift; sourceTree = "<group>"; };
+		D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5E96A032D581C96007D7D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A1C2D581C9B007D7D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A262D581C9B007D7D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5E969FD2D581C95007D7D2B = {
+			isa = PBXGroup;
+			children = (
+				D5E96A082D581C96007D7D2B /* Hovalow */,
+				D5E96A222D581C9B007D7D2B /* HovalowTests */,
+				D5E96A2C2D581C9B007D7D2B /* HovalowUITests */,
+				D5E96A072D581C96007D7D2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5E96A072D581C96007D7D2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5E96A062D581C96007D7D2B /* Hovalow.app */,
+				D5E96A1F2D581C9B007D7D2B /* HovalowTests.xctest */,
+				D5E96A292D581C9B007D7D2B /* HovalowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5E96A082D581C96007D7D2B /* Hovalow */ = {
+			isa = PBXGroup;
+			children = (
+				D5E96A092D581C96007D7D2B /* AppDelegate.swift */,
+				D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */,
+				D5E96A0D2D581C96007D7D2B /* ViewController.swift */,
+				D5E96A0F2D581C96007D7D2B /* Main.storyboard */,
+				D5E96A152D581C9A007D7D2B /* Assets.xcassets */,
+				D5E96A172D581C9A007D7D2B /* LaunchScreen.storyboard */,
+				D5E96A1A2D581C9A007D7D2B /* Info.plist */,
+				D5E96A122D581C96007D7D2B /* Hovalow.xcdatamodeld */,
+			);
+			path = Hovalow;
+			sourceTree = "<group>";
+		};
+		D5E96A222D581C9B007D7D2B /* HovalowTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5E96A232D581C9B007D7D2B /* HovalowTests.swift */,
+			);
+			path = HovalowTests;
+			sourceTree = "<group>";
+		};
+		D5E96A2C2D581C9B007D7D2B /* HovalowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5E96A2D2D581C9B007D7D2B /* HovalowUITests.swift */,
+				D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */,
+			);
+			path = HovalowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5E96A052D581C96007D7D2B /* Hovalow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E96A332D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "Hovalow" */;
+			buildPhases = (
+				D5E96A022D581C96007D7D2B /* Sources */,
+				D5E96A032D581C96007D7D2B /* Frameworks */,
+				D5E96A042D581C96007D7D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hovalow;
+			productName = Hovalow;
+			productReference = D5E96A062D581C96007D7D2B /* Hovalow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5E96A1E2D581C9B007D7D2B /* HovalowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E96A362D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "HovalowTests" */;
+			buildPhases = (
+				D5E96A1B2D581C9B007D7D2B /* Sources */,
+				D5E96A1C2D581C9B007D7D2B /* Frameworks */,
+				D5E96A1D2D581C9B007D7D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5E96A212D581C9B007D7D2B /* PBXTargetDependency */,
+			);
+			name = HovalowTests;
+			productName = HovalowTests;
+			productReference = D5E96A1F2D581C9B007D7D2B /* HovalowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5E96A282D581C9B007D7D2B /* HovalowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E96A392D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "HovalowUITests" */;
+			buildPhases = (
+				D5E96A252D581C9B007D7D2B /* Sources */,
+				D5E96A262D581C9B007D7D2B /* Frameworks */,
+				D5E96A272D581C9B007D7D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5E96A2B2D581C9B007D7D2B /* PBXTargetDependency */,
+			);
+			name = HovalowUITests;
+			productName = HovalowUITests;
+			productReference = D5E96A292D581C9B007D7D2B /* HovalowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5E969FE2D581C95007D7D2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D5E96A052D581C96007D7D2B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D5E96A1E2D581C9B007D7D2B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D5E96A052D581C96007D7D2B;
+					};
+					D5E96A282D581C9B007D7D2B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D5E96A052D581C96007D7D2B;
+					};
+				};
+			};
+			buildConfigurationList = D5E96A012D581C95007D7D2B /* Build configuration list for PBXProject "Hovalow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5E969FD2D581C95007D7D2B;
+			productRefGroup = D5E96A072D581C96007D7D2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5E96A052D581C96007D7D2B /* Hovalow */,
+				D5E96A1E2D581C9B007D7D2B /* HovalowTests */,
+				D5E96A282D581C9B007D7D2B /* HovalowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5E96A042D581C96007D7D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E96A162D581C9A007D7D2B /* Assets.xcassets in Resources */,
+				D5E96A192D581C9A007D7D2B /* Base in Resources */,
+				D5E96A112D581C96007D7D2B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A1D2D581C9B007D7D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A272D581C9B007D7D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5E96A022D581C96007D7D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E96A142D581C96007D7D2B /* Hovalow.xcdatamodeld in Sources */,
+				D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */,
+				D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */,
+				D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A1B2D581C9B007D7D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E96A242D581C9B007D7D2B /* HovalowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E96A252D581C9B007D7D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E96A2E2D581C9B007D7D2B /* HovalowUITests.swift in Sources */,
+				D5E96A302D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5E96A212D581C9B007D7D2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5E96A052D581C96007D7D2B /* Hovalow */;
+			targetProxy = D5E96A202D581C9B007D7D2B /* PBXContainerItemProxy */;
+		};
+		D5E96A2B2D581C9B007D7D2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5E96A052D581C96007D7D2B /* Hovalow */;
+			targetProxy = D5E96A2A2D581C9B007D7D2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5E96A0F2D581C96007D7D2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5E96A102D581C96007D7D2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5E96A172D581C9A007D7D2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5E96A182D581C9A007D7D2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5E96A312D581C9B007D7D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5E96A322D581C9B007D7D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5E96A342D581C9B007D7D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hovalow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.Hovalow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5E96A352D581C9B007D7D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hovalow/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.Hovalow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5E96A372D581C9B007D7D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.HovalowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hovalow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hovalow";
+			};
+			name = Debug;
+		};
+		D5E96A382D581C9B007D7D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.HovalowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hovalow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hovalow";
+			};
+			name = Release;
+		};
+		D5E96A3A2D581C9B007D7D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.HovalowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hovalow;
+			};
+			name = Debug;
+		};
+		D5E96A3B2D581C9B007D7D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.HovalowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hovalow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5E96A012D581C95007D7D2B /* Build configuration list for PBXProject "Hovalow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E96A312D581C9B007D7D2B /* Debug */,
+				D5E96A322D581C9B007D7D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5E96A332D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "Hovalow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E96A342D581C9B007D7D2B /* Debug */,
+				D5E96A352D581C9B007D7D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5E96A362D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "HovalowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E96A372D581C9B007D7D2B /* Debug */,
+				D5E96A382D581C9B007D7D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5E96A392D581C9B007D7D2B /* Build configuration list for PBXNativeTarget "HovalowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E96A3A2D581C9B007D7D2B /* Debug */,
+				D5E96A3B2D581C9B007D7D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5E96A122D581C96007D7D2B /* Hovalow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5E96A132D581C96007D7D2B /* Hovalow.xcdatamodel */,
+			);
+			currentVersion = D5E96A132D581C96007D7D2B /* Hovalow.xcdatamodel */;
+			path = Hovalow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5E969FE2D581C95007D7D2B /* Project object */;
+}
