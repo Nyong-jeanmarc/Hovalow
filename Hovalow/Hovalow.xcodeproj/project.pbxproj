@@ -13,10 +13,11 @@
 		D5E96A112D581C96007D7D2B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A102D581C96007D7D2B /* Base */; };
 		D5E96A142D581C96007D7D2B /* Hovalow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A122D581C96007D7D2B /* Hovalow.xcdatamodeld */; };
 		D5E96A162D581C9A007D7D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A152D581C9A007D7D2B /* Assets.xcassets */; };
-		D5E96A192D581C9A007D7D2B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A182D581C9A007D7D2B /* Base */; };
 		D5E96A242D581C9B007D7D2B /* HovalowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A232D581C9B007D7D2B /* HovalowTests.swift */; };
 		D5E96A2E2D581C9B007D7D2B /* HovalowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A2D2D581C9B007D7D2B /* HovalowUITests.swift */; };
 		D5E96A302D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */; };
+		D5E96A3D2D5829AC007D7D2B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */; };
+		D5E96A402D594874007D7D2B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A3F2D594874007D7D2B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +45,14 @@
 		D5E96A102D581C96007D7D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5E96A132D581C96007D7D2B /* Hovalow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hovalow.xcdatamodel; sourceTree = "<group>"; };
 		D5E96A152D581C9A007D7D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5E96A182D581C9A007D7D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5E96A1A2D581C9A007D7D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5E96A1F2D581C9B007D7D2B /* HovalowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HovalowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E96A232D581C9B007D7D2B /* HovalowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowTests.swift; sourceTree = "<group>"; };
 		D5E96A292D581C9B007D7D2B /* HovalowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HovalowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E96A2D2D581C9B007D7D2B /* HovalowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowUITests.swift; sourceTree = "<group>"; };
 		D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		D5E96A3F2D594874007D7D2B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,15 @@
 		D5E96A082D581C96007D7D2B /* Hovalow */ = {
 			isa = PBXGroup;
 			children = (
+				D5E96A3E2D5829B7007D7D2B /* viewControllers */,
 				D5E96A092D581C96007D7D2B /* AppDelegate.swift */,
 				D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */,
 				D5E96A0D2D581C96007D7D2B /* ViewController.swift */,
 				D5E96A0F2D581C96007D7D2B /* Main.storyboard */,
 				D5E96A152D581C9A007D7D2B /* Assets.xcassets */,
-				D5E96A172D581C9A007D7D2B /* LaunchScreen.storyboard */,
 				D5E96A1A2D581C9A007D7D2B /* Info.plist */,
 				D5E96A122D581C96007D7D2B /* Hovalow.xcdatamodeld */,
+				D5E96A3F2D594874007D7D2B /* Launch Screen.storyboard */,
 			);
 			path = Hovalow;
 			sourceTree = "<group>";
@@ -128,6 +131,14 @@
 				D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */,
 			);
 			path = HovalowUITests;
+			sourceTree = "<group>";
+		};
+		D5E96A3E2D5829B7007D7D2B /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */,
+			);
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5E96A162D581C9A007D7D2B /* Assets.xcassets in Resources */,
-				D5E96A192D581C9A007D7D2B /* Base in Resources */,
+				D5E96A402D594874007D7D2B /* Launch Screen.storyboard in Resources */,
 				D5E96A112D581C96007D7D2B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +276,7 @@
 				D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */,
 				D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */,
 				D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */,
+				D5E96A3D2D5829AC007D7D2B /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +319,6 @@
 				D5E96A102D581C96007D7D2B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5E96A172D581C9A007D7D2B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5E96A182D581C9A007D7D2B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -444,12 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hovalow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -460,6 +465,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.Hovalow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,12 +477,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hovalow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -487,6 +494,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JMTEK.Hovalow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
