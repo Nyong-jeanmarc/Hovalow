@@ -18,6 +18,8 @@
 		D5E96A302D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */; };
 		D5E96A3D2D5829AC007D7D2B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */; };
 		D5E96A402D594874007D7D2B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E96A3F2D594874007D7D2B /* Launch Screen.storyboard */; };
+		D5E96A422D595E9A007D7D2B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A412D595E9A007D7D2B /* ForgotPasswordViewController.swift */; };
+		D5E96A442D5A239C007D7D2B /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A432D5A239C007D7D2B /* OTPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D5E96A2F2D581C9B007D7D2B /* HovalowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HovalowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		D5E96A3F2D594874007D7D2B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D5E96A412D595E9A007D7D2B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		D5E96A432D5A239C007D7D2B /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */,
+				D5E96A412D595E9A007D7D2B /* ForgotPasswordViewController.swift */,
+				D5E96A432D5A239C007D7D2B /* OTPViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -274,8 +280,10 @@
 			files = (
 				D5E96A142D581C96007D7D2B /* Hovalow.xcdatamodeld in Sources */,
 				D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */,
+				D5E96A422D595E9A007D7D2B /* ForgotPasswordViewController.swift in Sources */,
 				D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */,
 				D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */,
+				D5E96A442D5A239C007D7D2B /* OTPViewController.swift in Sources */,
 				D5E96A3D2D5829AC007D7D2B /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,6 +35,17 @@ class LoginViewController: UIViewController {
            textField.layer.borderColor = UIColor.lightGray.cgColor
            textField.layer.cornerRadius = 10
            textField.isEnabled = false
+           
+           let chevronContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+           let chevronView = UIImageView(image: UIImage(systemName: "chevron.down"))
+           chevronView.tintColor = .gray
+           chevronView.contentMode = .scaleAspectFit
+           chevronView.frame = CGRect(x: 5, y: 0, width: 20, height: 30)
+           chevronContainerView.addSubview(chevronView)
+           
+           textField.rightView = chevronContainerView
+           textField.rightViewMode = .always
+           
            return textField
        }()
 
@@ -83,9 +94,20 @@ class LoginViewController: UIViewController {
            button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
            button.setTitleColor(.black, for: .normal)
            button.contentHorizontalAlignment = .right
+           // Add target to the button
+           button.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside) // Add target here
+      
            return button
        }()
-
+    // Button action
+    @objc private func forgotPasswordButtonTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+        guard let forgotPasswordVC = storyboard.instantiateViewController(withIdentifier: "forgotPassword") as? ForgotPasswordViewController else {
+            print("Could not find ForgotPasswordViewController with identifier 'forgotPassword'")
+            return
+        }
+        navigationController?.pushViewController(forgotPasswordVC, animated: true)
+    }
        private let loginButton: UIButton = {
            let button = UIButton(type: .system)
            button.setTitle("Login", for: .normal)
