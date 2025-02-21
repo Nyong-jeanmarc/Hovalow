@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5307DE12D6783C700BE3247 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307DE02D6783C700BE3247 /* RegistrationViewController.swift */; };
 		D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A092D581C96007D7D2B /* AppDelegate.swift */; };
 		D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */; };
 		D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E96A0D2D581C96007D7D2B /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5307DE02D6783C700BE3247 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		D5E96A062D581C96007D7D2B /* Hovalow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hovalow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E96A092D581C96007D7D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E96A0B2D581C96007D7D2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		D5E96A3E2D5829B7007D7D2B /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D5307DE02D6783C700BE3247 /* RegistrationViewController.swift */,
 				D5E96A3C2D5829AC007D7D2B /* loginViewController.swift */,
 				D5E96A412D595E9A007D7D2B /* ForgotPasswordViewController.swift */,
 				D5E96A432D5A239C007D7D2B /* OTPViewController.swift */,
@@ -280,6 +283,7 @@
 			files = (
 				D5E96A142D581C96007D7D2B /* Hovalow.xcdatamodeld in Sources */,
 				D5E96A0E2D581C96007D7D2B /* ViewController.swift in Sources */,
+				D5307DE12D6783C700BE3247 /* RegistrationViewController.swift in Sources */,
 				D5E96A422D595E9A007D7D2B /* ForgotPasswordViewController.swift in Sources */,
 				D5E96A0A2D581C96007D7D2B /* AppDelegate.swift in Sources */,
 				D5E96A0C2D581C96007D7D2B /* SceneDelegate.swift in Sources */,

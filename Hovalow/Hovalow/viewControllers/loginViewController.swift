@@ -108,6 +108,15 @@ class LoginViewController: UIViewController {
         }
         navigationController?.pushViewController(forgotPasswordVC, animated: true)
     }
+    // Button action
+    @objc private func signUpButtonTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+        guard let forgotPasswordVC = storyboard.instantiateViewController(withIdentifier: "restration") as? RegistrationViewController else {
+            print("Could not find ForgotPasswordViewController with identifier 'forgotPassword'")
+            return
+        }
+        navigationController?.pushViewController(forgotPasswordVC, animated: true)
+    }
        private let loginButton: UIButton = {
            let button = UIButton(type: .system)
            button.setTitle("Login", for: .normal)
@@ -130,6 +139,8 @@ class LoginViewController: UIViewController {
        private let signUpButton: UIButton = {
            let button = UIButton(type: .system)
            button.setTitle("Sign Up", for: .normal)
+           // Add target to the button
+           button.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside) // Add target here
            button.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
            button.setTitleColor(.black, for: .normal)
            return button

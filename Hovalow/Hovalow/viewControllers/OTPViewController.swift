@@ -7,8 +7,39 @@
 
 import Foundation
 import UIKit
-class OTPViewController: UIViewController, UITextFieldDelegate {
+protocol OTPTextFieldDelegate: UITextFieldDelegate {
+    func textFieldDidDeleteBackward(_ textField: OTPTextField)
+}
+
+class OTPTextField: UITextField {
+    override func caretRect(for position: UITextPosition) -> CGRect {
+        // Always keep the cursor at the end of the text
+        return super.caretRect(for: self.endOfDocument)
+    }
+
+    override func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+        // Prevent user from moving the cursor manually
+        return []
+    }
+
+    weak var otpDelegate: OTPTextFieldDelegate?
+
+    override func deleteBackward() {
+        super.deleteBackward()
+        // Notify the delegate that backspace was pressed
+        otpDelegate?.textFieldDidDeleteBackward(self)
+    }
+}
+
+class OTPViewController: UIViewController, OTPTextFieldDelegate {
+    func textFieldDidDeleteBackward(_ textField: OTPTextField) {
+        // Handle backspace on an empty text field
+              if textField.text?.isEmpty == true {
+                  moveToPreviousField(textField)
+              }
+    }
     
+
     // MARK: - UI Components
     
     private let titleLabel: UILabel = {
@@ -51,7 +82,7 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         return label
     }()
     
-    private var otpFields: [UITextField] = []
+    private var otpFields: [OTPTextField] = []
     private let otpStackView = UIStackView()
     
     private let verifyButton: UIButton = {
@@ -142,12 +173,13 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         otpStackView.distribution = .fillEqually
         
         for i in 0..<4 {
-            let textField = UITextField()
+            let textField = OTPTextField()
             textField.borderStyle = .roundedRect
             textField.textAlignment = .center
             textField.font = UIFont.boldSystemFont(ofSize: 24)
             textField.keyboardType = .numberPad
             textField.delegate = self
+            textField.otpDelegate = self
             textField.tag = i
             textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
             otpFields.append(textField)
@@ -158,46 +190,53 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     // MARK: - UITextFieldDelegate
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        // Handle deletion
-        if string.isEmpty {
-            // If the user is deleting and the text field is already empty, move to the previous field
-            if textField.text?.isEmpty == true {
-                moveToPreviousField(textField)
-            }
-            return true
-        }
+        guard let textField = textField as? OTPTextField else { return false }
         
-        // Handle input
-        if let text = textField.text, text.count == 1 {
-            // If the text field already has a character, don't allow more input
+        // Handle backspace
+        if string.isEmpty {
+            textField.text = ""
+            moveToPreviousField(textField)
+            return false
+        }
+
+        // Allow only one character at a time
+        if textField.text?.isEmpty == true  {
+            textField.text = string
+            moveToNextField(textField)
+            return false
+        }else{
+            textField.text = string
+            moveToNextField(textField)
             return false
         }
         
-        return true
+        return false
     }
-    
-    @objc private func textFieldDidChange(_ textField: UITextField) {
-        guard let text = textField.text else { return }
-        if text.count == 1 {
-            textField.text = String(text.prefix(1))
-            moveToNextField(textField)
-        }
+
+    @objc private func textFieldDidChange(_ textField: OTPTextField) {
+        guard let text = textField.text, !text.isEmpty else { return }
+
+        // Ensure only the latest digit remains
+        textField.text = String(text.prefix(1))
+        
+        // Move to the next field
+        moveToNextField(textField)
     }
-    
-    private func moveToNextField(_ textField: UITextField) {
+
+    private func moveToNextField(_ textField: OTPTextField) {
         if let index = otpFields.firstIndex(of: textField), index < otpFields.count - 1 {
             otpFields[index + 1].becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
         }
     }
-    
-    private func moveToPreviousField(_ textField: UITextField) {
+
+    private func moveToPreviousField(_ textField: OTPTextField) {
         if let index = otpFields.firstIndex(of: textField), index > 0 {
             otpFields[index - 1].becomeFirstResponder()
         }
     }
-    
+
     @objc private func verifyButtonTapped() {
         print("OTP Submitted: \(otpFields.map { $0.text ?? "" }.joined())")
     }
