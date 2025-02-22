@@ -101,7 +101,7 @@ class LoginViewController: UIViewController {
        }()
     // Button action
     @objc private func forgotPasswordButtonTapped() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+        let storyboard = UIStoryboard(name: "", bundle: nil) // Replace "Main" with your storyboard name
         guard let forgotPasswordVC = storyboard.instantiateViewController(withIdentifier: "forgotPassword") as? ForgotPasswordViewController else {
             print("Could not find ForgotPasswordViewController with identifier 'forgotPassword'")
             return
@@ -113,6 +113,7 @@ class LoginViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
         guard let forgotPasswordVC = storyboard.instantiateViewController(withIdentifier: "restration") as? RegistrationViewController else {
             print("Could not find ForgotPasswordViewController with identifier 'forgotPassword'")
+            
             return
         }
         navigationController?.pushViewController(forgotPasswordVC, animated: true)
@@ -123,10 +124,21 @@ class LoginViewController: UIViewController {
            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
            button.backgroundColor = UIColor.brown
            button.layer.cornerRadius = 12
+           // Add target to navigate to FindYourHomeViewController
+              button.addTarget(self, action: #selector(navigateToFindYourHome), for: .touchUpInside)
            button.setTitleColor(.white, for: .normal)
            return button
        }()
 
+    @objc func navigateToFindYourHome() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let findYourHomeVC = storyboard.instantiateViewController(withIdentifier: "FindYourHomeViewController") as? findYourHomeViewController {
+            self.navigationController?.pushViewController(findYourHomeVC, animated: true)
+        } else {
+            return
+        }
+    }
+    
        private let signUpLabel: UILabel = {
            let label = UILabel()
            label.text = "Don’t have an account?"
